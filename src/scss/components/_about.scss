@@ -1,0 +1,27 @@
+.about {
+  padding: 120px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__content {
+    flex-basis: 750px;
+  }
+
+  &__title {
+    font-size: 52px;
+    margin-bottom: 32px;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  &__pic {
+    flex-basis: 530px;
+  }
+}

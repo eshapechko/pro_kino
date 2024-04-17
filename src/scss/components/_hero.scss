@@ -1,0 +1,25 @@
+.hero {
+  padding-top: 476px;
+  background-image: url('../../img/photo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  linear-gradient: (180deg, #000 0%, #000 100%);
+
+  &__banner {
+    margin: 0 auto 2px;
+  }
+
+  &__date {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ff3d00;
+    margin-bottom: 16px;
+  }
+
+  &__arrow {
+    display: flex;
+    justify-content: center;
+  }
+}

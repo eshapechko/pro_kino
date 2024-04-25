@@ -1,14 +1,42 @@
+@use '../media' as *;
+
 .about {
   padding: 120px 0;
+
+  @include laptop {
+    padding: 100px 0;
+  }
+
+  @include tablet {
+    padding: 80px 0;
+  }
+
+  @include mobile {
+    padding: 60px 0;
+  }
 
   &__container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+    @include mobile {
+    }
   }
+
+  // &__container::after {
+  // }
 
   &__content {
     flex-basis: 750px;
+
+    @include tablet {
+      flex-basis: auto;
+    }
   }
 
   &__title {

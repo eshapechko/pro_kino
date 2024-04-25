@@ -1,0 +1,37 @@
+$bigscreen: 1600px;
+$laptop: 1080px;
+$tablet: 900px;
+$mobile: 620px;
+
+@mixin bigscreen {
+  @media (min-width: $bigscreen) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@include laptop {
+}
+
+@include tablet {
+}
+
+@include mobile {
+}

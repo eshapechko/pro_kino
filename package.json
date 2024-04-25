@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite --open",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview --open"
   },
   "devDependencies": {
     "sass": "^1.75.0",

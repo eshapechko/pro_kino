@@ -1,11 +1,52 @@
+@use '../media' as *;
+
 .trailers {
   padding-bottom: 120px;
+
+  @include laptop {
+    padding-bottom: 100px;
+  }
+
+  @include tablet {
+    padding-bottom: 80px;
+  }
+
+  @include mobile {
+    padding-bottom: 60px;
+  }
+
+  &__container {
+    @include mobile {
+      padding: 0;
+    }
+  }
 
   &__buttons {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-bottom: 16px;
+
+    @include tablet {
+      gap: 8px;
+    }
+
+    @include mobile {
+      padding: 0 16px;
+      overflow-x: scroll;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+  }
+
+  &__buttons::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__list {
+    @include mobile {
+      padding: 0 16px;
+    }
   }
 
   &__button {
@@ -15,7 +56,16 @@
     font-size: 14px;
     text-transform: uppercase;
     color: #fff;
+    white-space: nowrap;
     transition: background-color 0.3s ease-in-out;
+
+    @include tablet {
+      font-size: 12px;
+      padding: 10px 16px;
+    }
+
+    @include mobile {
+    }
 
     &:focus,
     &:hover {

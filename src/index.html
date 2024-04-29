@@ -21,6 +21,7 @@
       crossorigin />
 
     <link href="scss/index.scss" rel="stylesheet" />
+    <script type="module" src="index.js"></script>
   </head>
 
   <body>
@@ -100,31 +101,26 @@
             <li class="trailers__item-button">
               <button
                 class="trailers__button trailers__button_active"
-                aria-label="Первый трейлер">
+                aria-label="Первый трейлер"
+                data-src="https://www.youtube.com/embed/ByAn8DF8Ykk">
                 трейлер 1
               </button>
             </li>
             <li class="trailers__item-button">
-              <button class="trailers__button" aria-label="Второй трейлер">
+              <button
+                class="trailers__button"
+                aria-label="Второй трейлер"
+                data-src="https://www.youtube.com/embed/waJKJW_XU90">
                 трейлер 2
               </button>
             </li>
             <li class="trailers__item-button">
-              <button class="trailers__button" aria-label="Третий трейлер">
+              <button
+                class="trailers__button"
+                aria-label="Третий трейлер"
+                data-src="https://www.youtube.com/embed/Cw12Dat8bkE">
                 трейлер 3
               </button>
-            </li>
-          </ul>
-
-          <ul class="trailers__list">
-            <li class="trailers__item">
-              <div class="trailers__wrapper">
-                <iframe
-                  class="trailers__video"
-                  src="https://www.youtube.com/embed/ByAn8DF8Ykk"
-                  title="YouTube video player"
-                  frameborder="0"></iframe>
-              </div>
             </li>
           </ul>
         </div>
